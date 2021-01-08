@@ -6,25 +6,29 @@ import Slider from "react-slick";
 const SliderProduct = (props) => {
 
  const data = [
-  {ID: 1,title:'Mỹ phẩm châu âu', name: 'Ohui', price:'350.000D', sale:'450.000D',img : '/static/media/product_1.0ed408a1.jpg'},
-  {ID: 2,title:'Mỹ phẩm châu âu', name: 'Sarvon', price:'350.000D', sale:'450.000D',img :'/static/media/product_2.78a39301.jpg'},
-  {ID: 3,title:'Mỹ phẩm châu âu', name: 'Home', price:'350.000D', sale:'450.000D',img :'/static/media/product_3.842c6be1.jpg'},
-  {ID: 4,title:'Mỹ phẩm châu âu', name: 'Debora', price:'350.000D', sale:'450.000D',img :'/static/media/product_4.2b15315e.jpg'},
-  {ID: 5,title:'Mỹ phẩm châu âu', name: 'Tyffany', price:'350.000D', sale:'450.000D',img :'/static/media/product_5.2b5300cc.jpg'},
-  {ID: 6,title:'Mỹ phẩm châu âu', name: 'Tyffany', price:'350.000D', sale:'450.000D',img :'/static/media/product_6.b6e50322.jpg'},
-  {ID: 8,title:'Mỹ phẩm châu âuo', name: 'Debora', price:'350.000D', sale:'450.000D',img :'/static/media/product_8.c8ec1133.png'},
-  {ID: 9,title:'Mỹ phẩm châu âu', name: 'Sarvon', price:'350.000D', sale:'450.000D',img :'/static/media/product9.d73f778b.png'},
+  {ID: 1,title:'Mỹ phẩm châu âu', name: 'Ohui', price:'350.000D', sale:'450.000D',img : 'https://fe-mandala.vercel.app/images/product_1.jpg'},
+  {ID: 2,title:'Mỹ phẩm châu âu', name: 'Sarvon', price:'350.000D', sale:'450.000D',img :'https://fe-mandala.vercel.app/images/product_2.jpg'},
+  {ID: 3,title:'Mỹ phẩm châu âu', name: 'Home', price:'350.000D', sale:'450.000D',img :'https://fe-mandala.vercel.app/images/product_3.jpg'},
+  {ID: 4,title:'Mỹ phẩm châu âu', name: 'Debora', price:'350.000D', sale:'450.000D',img :'https://fe-mandala.vercel.app/images/product_4.jpg'},
+  {ID: 5,title:'Mỹ phẩm châu âu', name: 'Tyffany', price:'350.000D', sale:'450.000D',img :'https://fe-mandala.vercel.app/images/product_5.jpg'},
+  {ID: 6,title:'Mỹ phẩm châu âu', name: 'Tyffany', price:'350.000D', sale:'450.000D',img :'https://fe-mandala.vercel.app/images/product_6.jpg'},
+  {ID: 8,title:'Mỹ phẩm châu âuo', name: 'Debora', price:'350.000D', sale:'450.000D',img :'https://fe-mandala.vercel.app/images/product_4.jpg'},
+  {ID: 9,title:'Mỹ phẩm châu âu', name: 'Sarvon', price:'350.000D', sale:'450.000D',img :'https://fe-mandala.vercel.app/images/product_1.jpg'},
 
 
 ];
 
  const settings = {
-  dots: true,
-  infinite: false,
-  speed: 500,
+  className: "center",
+  infinite: true,
+  centerPadding: "60px",
   slidesToShow: 6,
-  slidesToScroll: 6,
-  initialSlide: 0,
+  swipeToSlide: true,
+  afterChange: function(index) {
+    console.log(
+      `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
+    );
+  },
   autoplay: true,
   autoplaySpeed: 2000,
   cssEase: "linear",
@@ -57,9 +61,7 @@ const SliderProduct = (props) => {
 };
 
  return (
-  <div>
-       <div className="SliderProduct">
-    <div>
+
         <Slider {...settings}>
         {data.map(category =>(
             <div className="product__item">
@@ -83,9 +85,7 @@ const SliderProduct = (props) => {
           </div>
           ))}
         </Slider>
-      </div>
-    </div>
-  </div>
+
  );
 }
 
