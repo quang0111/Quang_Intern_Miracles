@@ -4,14 +4,11 @@
  }
 
    .section__information .contact__link-item {
-     display: -webkit-box;
-     display: -ms-flexbox;
+
      display: flex;
-     -webkit-box-pack: center;
-     -ms-flex-pack: center;
+
      justify-content: center;
-     -webkit-box-align: center;
-     -ms-flex-align: center;
+
      align-items: center;
      opacity: 0.5;
 
@@ -35,6 +32,7 @@
        }
  .section__information 
  .infor {
+   margin-top: 40px;
    position: relative;
    }
    .section__information 

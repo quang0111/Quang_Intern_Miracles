@@ -1,85 +1,19 @@
 import React from 'react';
 
-import FaceBook from '../../assets/icons/facebook.svg';
-import Google from '../../assets/icons/google.svg';
-import Instagram from '../../assets/icons/instagram.svg';
-import Linkedin from '../../assets/icons/linkedin.svg';
-import Pinterest from '../../assets/icons/pinterest.svg';
-import Twitter from '../../assets/icons/twitter.svg';
-
 import Logo from '../../assets/images/logo.png';
 import Woman from '../../assets/images/123123.png';
 
-import Slider from 'react-slick';
-
-
+import SliderLink from '../Slider/SliderLink';
 
 const Infor = (props) => {
 
-  const settings = {
-    arrows: false,
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    appendDots: dots => (
-      <div
-        style={{
-          position:"absolute",
-          bottom:".5%",
-          left: "10%",
-          width: "200px",
-        }}
-      >
-        <ul style={{ margin: "22px" }}> {dots} </ul>
-      </div>
-    ),
-    customPaging: i => (
-      <div
-        style={{
-          width: "5px",
-          height: "5px",
-          backgroundColor: "gray",
-          opacity: ".5",
-        }}
-      >
-      </div>
-    )
-  };
 
  return (
   <section className="section__information">
   <div className="container">
     
-    <div className="infor__contact">
-      <div className="contact__link contact__link-control">
-        <div className="contact__link-item">
-          <div className="item-icon"><img src={FaceBook} alt="facebook" /></div>
-          <div className="item-link"><span>Facebook</span></div>
-        </div>
-        <div className="contact__link-item">
-          <div className="item-icon"><img src={Twitter} alt="twitter" /></div>
-          <div className="item-link"><span>Twitter</span></div>
-        </div>
-        <div className="contact__link-item">
-          <div className="item-icon"><img src={Instagram} alt="instagram" /></div>
-          <div className="item-link"><span>Instagram</span></div>
-        </div>
-        <div className="contact__link-item">
-          <div className="item-icon"><img src={Google} alt="google" /></div>
-          <div className="item-link"><span>Google ++</span></div>
-        </div>
-        <div className="contact__link-item">
-          <div className="item-icon"><img src={Pinterest} alt="pinterest" /></div>
-          <div className="item-link"><span>Pinterest</span></div>
-        </div>
-        <div className="contact__link-item">
-          <div className="item-icon"><img src={Linkedin} alt="linkedin" /></div>
-          <div className="item-link"><span>Linkedin</span></div>
-        </div>
-      </div>
-    </div>
+    <SliderLink />
+
     <div className="infor">
       <div className="row">
         <div className="col-xs-12 col-sm-6 col-lg-4">
