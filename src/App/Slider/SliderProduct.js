@@ -25,6 +25,9 @@ const SliderProduct = (props) => {
   slidesToShow: 6,
   slidesToScroll: 6,
   initialSlide: 0,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  cssEase: "linear",
   responsive: [
     {
       breakpoint: 1024,

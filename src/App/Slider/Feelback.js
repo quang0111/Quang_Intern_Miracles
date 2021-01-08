@@ -19,6 +19,7 @@ const Feelback = (props) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    
     appendDots: dots => (
       <div
         style={{

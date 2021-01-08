@@ -61,7 +61,7 @@ const Header =() => {
                 </a>
               </li>
               <li className="header__menu-item">
-                <a className="header__menu-link" href="#">
+                <a className="header__menu-link" href="">
                   Sản phẩm
                   <img
                    src={Dropdown} alt="dropdown" 
