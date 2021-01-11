@@ -11,6 +11,7 @@ import Man from "../../assets/images/feedback_man.png";
 
 
 const Feelback = (props) => {
+
   
   const settings = {
     arrows: false,
@@ -19,6 +20,9 @@ const Feelback = (props) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     
     appendDots: dots => (
       <div
@@ -48,6 +52,7 @@ const Feelback = (props) => {
  
   <Container className="FeelbackSlider">
     <Slider {...settings}>
+
       <div className="FeelbackSlider__category">
         <p className="FeelbackSlider__category-content">
           Vẫn là vẻ bề ngoài vô cùng đơn giản với các tông màu trắng, hồng làm

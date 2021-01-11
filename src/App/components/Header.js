@@ -8,7 +8,22 @@ import Dropdown from "../../assets/icons/dropdown-arrow.png";
 import NavMenu from "../../assets/icons/nav-menu.png";
 
 
+import Homepage from "../Page/Homepage/Homepage";
+import About from "../Page/About";
+import Map from "../Page/Map";
+import News from "../Page/News";
+import Contact from "../Page/Contact";
+
+
 import { Container, Row} from "reactstrap";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
 
 const Header =() => {
   const [open, isOpen] = useState(true);
@@ -38,7 +53,11 @@ const Header =() => {
 
   const toggle = () => isOpen(!open);
 
+
+
   return (
+    <Router>
+   
     <div className="header">
       <Container>
         <Row className="header__row">
@@ -49,16 +68,17 @@ const Header =() => {
           </div>
           <div className="header__menu"
            style={{display: open ? 'block': 'none'}}>
+       
             <ul className="header__menu-list">
               <li className="header__menu-item">
-                <a className="header__menu-link" href="#">
+                <Link className="header__menu-link" to="/Homepage">
                   Trang Chủ
-                </a>
+                </Link>
               </li>
               <li className="header__menu-item">
-                <a className="header__menu-link" href="#">
+                <Link className="header__menu-link" to="/About">
                   Giới thiệu
-                </a>
+                </Link>
               </li>
               <li className="header__menu-item">
                 <a className="header__menu-link" href="">
@@ -204,21 +224,22 @@ const Header =() => {
                   </div>
                 </li>
                 <li className="header__menu-item">
-                  <a className="header__menu-link" href="#">
+                  <Link className="header__menu-link" to="/News">
                     Tin tức
-                  </a>
+                  </Link>
                 </li>
                 <li className="header__menu-item">
-                  <a className="header__menu-link" href="#">
+                  <Link className="header__menu-link" to="/Map">
                     Bản đồ
-                  </a>
+                  </Link>
                 </li>
                 <li className="header__menu-item">
-                  <a className="header__menu-link" href="#">
+                  <Link className="header__menu-link" to="/Contact">
                     Liên hệ
-                  </a>
+                  </Link>
                 </li>
               </ul>
+
           </div>
 
           <div className="header__icon">
@@ -232,6 +253,27 @@ const Header =() => {
         </Row>
       </Container>
     </div>
+    
+        <Switch>
+          <Route path="/Homepage">
+            <Homepage />
+          </Route>
+          <Route path="/About">
+            <About />
+          </Route>
+          <Route path="/News">
+            <News />
+          </Route>
+          <Route path="/Map">
+            <Map />
+          </Route>
+          <Route path="/Contact">
+            <Contact />
+          </Route>
+
+        </Switch>
+
+  </Router>
   );
 }
 

@@ -15,17 +15,21 @@ const SliderLink = (props) => {
 
  const settings = {
   className: "center",
-  centerMode: true,
   infinite: true,
   centerPadding: "60px",
   slidesToShow: 6,
-  speed: 500,
+  swipeToSlide: true,
+  afterChange: function(index) {
+    console.log(
+      `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
+    );
+  },
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         infinite: true,
         dots: true
       }
@@ -33,9 +37,9 @@ const SliderLink = (props) => {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1
       }
     },
     {
