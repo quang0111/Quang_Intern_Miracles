@@ -5,3 +5,8 @@
 [0110/165607.828:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\DELL\AppData\Local\AVAST Software\Browser\User Data\Crashpad\attachments\437ad783-1094-4048-9ff0-9367f3059ff3: The system cannot find the path specified. (0x3)
 [0111/091005.888:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\DELL\AppData\Local\AVAST Software\Browser\User Data\Crashpad\attachments\f4f4a210-73da-4ae8-93c6-c5f946b09608: The system cannot find the path specified. (0x3)
 [0111/091013.927:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0120/091547.106:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0120/110240.125:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0120/110240.125:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0120/110240.125:ERROR:exception_snapshot_win.cc(99)] thread ID 8752 not found in process
+[0120/110240.125:ERROR:exception_snapshot_win.cc(99)] thread ID 8084 not found in process

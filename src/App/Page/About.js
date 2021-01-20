@@ -6,7 +6,7 @@ const About = (props) => {
  return (
   <div>
    <AboutMe />
-   <Footer />
+
   </div>
  );
 }
