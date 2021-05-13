@@ -1,0 +1,40 @@
+.home {
+ padding-top: 80px;
+ 
+ background-color: #d6d6d66b;
+ padding-bottom: 80px;
+}
+
+.home h1 {
+ text-align: center;
+}
+
+.home p{
+ padding: 0 10%;
+ letter-spacing: 2px;
+ /* padding: 100px; */
+ line-height: 22px;
+ margin-bottom: 45px;
+}
+
+
+.pdf{
+ text-align: center;
+}
+
+.pdf a {
+ margin-top: 20px;
+ padding: 20px 50px 20px 50px;
+ cursor: pointer;
+ background-color: #050598db;
+ border: 1px solid white;
+ border-radius: 8px;
+ color: white;
+ text-decoration: none;
+}
+
+.pdf a:hover{
+ background-color: white;
+ color: #050598db;
+ font-weight: 600;
+}

@@ -1,0 +1,24 @@
+.skill{
+ padding: 0 10%;
+ padding-bottom: 50px;
+ padding-top: 50px;
+}
+
+.container {
+ width: 100%;
+ background-color: #ddd;
+ border-radius: 10px;
+}
+
+.skills {
+ text-align: right;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ color: white;
+}
+
+.html {width: 90%; background-color: #4bc397;;border-radius: 10px;}
+.css {width: 80%; background-color: #4891cc;border-radius: 10px;}
+.js {width: 65%; background-color: #ea6a62;border-radius: 10px;}
+.react {width: 60%; background-color: #a3d62c;border-radius: 10px;}
+.English {width: 60%; background-color: #d28e28;border-radius: 10px;}

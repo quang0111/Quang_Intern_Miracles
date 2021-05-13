@@ -1,0 +1,15 @@
+.activities{
+ padding: 50px 10%;
+ text-align: center;
+}
+
+.container-activities ul li {
+ list-style: none;
+ line-height: 40px;
+ font-size: 1.2rem;
+ font-weight: 600;
+}
+
+.container-activities ul{
+ text-align: left;
+}

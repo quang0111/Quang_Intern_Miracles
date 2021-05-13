@@ -1,0 +1,49 @@
+.contact{
+ background-color: black;
+ padding: 50px 10%;
+}
+
+.container-contact{
+ margin-left: 20%;
+ display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+ .container-contact{
+  flex-direction: column;
+  margin-left: 0;
+ }
+ .contact-left{
+  margin: 0 auto;
+ }
+ .contact-right ul{
+  text-align: center;
+ 
+ }
+}
+
+.contact-left img{
+ width: 200px;
+ height: 200px;
+ border-radius: 50%;
+ background-position: center;
+ object-fit: cover;
+}
+
+.contact-right ul{
+ margin-top: 50px;
+}
+
+.contact-right ul li{
+ list-style: none;
+ line-height: 25px;
+ color: white;
+ font-weight: 600;
+ letter-spacing: 1px;
+}
+
+.contact-right ul li:hover{
+ text-decoration:underline;
+ cursor: pointer;
+}
+

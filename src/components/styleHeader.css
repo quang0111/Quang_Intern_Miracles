@@ -1,0 +1,92 @@
+.banner{
+ background-image: url("../image/banner.jpg");
+ position: relative;
+ height: 30vh;
+ width: 100%;
+ background-repeat: no-repeat;
+ background-size: cover;
+ display: flex;
+ justify-content: space-between;
+}
+
+.changecolor {
+ background: #1b020287;
+ /* background: red; */
+ height: 30vh;
+ position: relative;
+ width: 100%;
+ opacity: 0.3;
+}
+
+.banner p{
+ position: absolute;
+ top: 22%;
+ left: 30%;
+ /* width: 600px; */
+ padding-right: 20px;
+ text-align: left;
+ color: white;
+ font-weight: 600;
+ line-height: 28px;
+ letter-spacing: 2px;
+ font-style: italic;
+}
+
+@media only screen and (max-width: 700px) {
+ .banner p{
+ font-size: 0.9rem;
+ top: 2%;
+
+ }
+ .avatar img {
+  width: 170px;
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+ }
+}
+
+.avatar img {
+ width: 170px;
+ border-radius: 50%;
+ position: absolute;
+ top: 60%;
+ left: 10%;
+}
+
+.menu ul{
+ display: flex;
+ list-style: none;
+ background-color: white;
+ position: absolute;
+ top: 75%;
+ left: 56%;
+ /* padding-right: 52px; */
+ padding: 20px 84px 23px 84px;
+ border-radius: 6px;
+ box-shadow: 7px 6px 54px 18px #8888882b;
+}
+
+.menu ul li a{
+ margin-left: 20px;
+ font-size: 15px;
+ font-weight: 600;
+ background-color: white;
+ color: black;
+ cursor: pointer;
+ text-decoration: none;
+}
+
+.menu ul li a:hover {
+ color: blue;
+} 
+
+
+
+
+@media only screen and (max-width: 1200px) {
+ .menu {
+  display: none;
+ }
+}

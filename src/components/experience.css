@@ -1,0 +1,68 @@
+.experience {
+ padding:  20px 10%;
+ 
+ background-color: rgb(226 221 213 / 33%);
+ margin-top: 20px;
+ padding-bottom: 50px;
+}
+
+.soft{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 50px;
+}
+
+
+
+.soft-left img{
+ width: 500px;
+ margin-top: 15px;
+}
+
+.soft-right{
+ 
+ width: 50%;
+}
+
+.soft-right ul li {
+ list-style: none;
+ font-size: 1rem;
+}
+
+
+
+.soft-2 {
+ display: flex;
+ flex-direction: row-reverse;
+ margin-top: 80px;
+}
+
+.soft-right2 ul li {
+ list-style: none;
+ font-size: 1rem;
+}
+
+.soft-right2{
+ 
+ width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+ .soft-2 {
+  flex-direction: column;
+ }
+.soft{
+ flex-direction: column;
+}
+.soft-left img{
+ width: 100%;
+}
+
+.soft-right{
+ margin-top: 20px;
+ width: 100%;
+}
+
+
+}
+
